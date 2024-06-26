@@ -112,10 +112,11 @@ footer p {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    margin: 5 px; 
+    margin
 }
 
 .link-certificado:hover {
+    margin: 10px;
     background-color: #0056b3;
 }
 
