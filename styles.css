@@ -1,0 +1,80 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #121212;
+  overflow-x: hidden;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+#sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sidebar nav ul li {
+  margin: 20px 0;
+}
+
+#sidebar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  transition: color 0.3s;
+}
+
+#sidebar nav ul li a:hover {
+  color: #00ff00;
+}
+
+#content {
+  margin-left: 60px;
+  padding: 20px;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-in-out;
+}
+
+.highlight {
+  color: #00ff00;
+}
+
+#home {
+  background: linear-gradient(to bottom, #1e1e1e, #121212);
+}
+
+#about {
+  background: linear-gradient(to bottom, #121212, #1e1e1e);
+}
+
+#projects {
+  background: linear-gradient(to bottom, #1e1e1e, #121212);
+}
+
+#contact {
+  background: linear-gradient(to bottom, #121212, #1e1e1e);
+}

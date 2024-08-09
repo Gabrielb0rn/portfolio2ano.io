@@ -1,0 +1,197 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #121212;
+}
+
+/* Navegação Lateral */
+.sidebar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover {
+    color: #00ff00;
+}
+
+.sidebar a span {
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: #1d1d1d;
+    position: relative;
+}
+
+.header-content {
+    max-width: 600px;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #00ff00;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+header h1 span {
+    color: #fff;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #fff;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+header p span {
+    color: #00ff00;
+}
+
+/* Seções */
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+#about, #projects, #contact {
+    background: #1d1d1d;
+    text-align: center;
+}
+
+#about h2, #projects h2, #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+#about p, #projects .project, #contact form {
+    animation: fadeIn 2s ease-in-out 1s;
+}
+
+.project {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: #333;
+    border-radius: 10px;
+}
+
+.project h3 {
+    margin-bottom: 0.5rem;
+}
+
+.project p {
+    color: #ccc;
+}
+
+/* Formulário de Contato */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 0.5rem 0;
+}
+
+form input, form textarea, form button {
+    width: 80%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    background: #333;
+    border: none;
+    color: #fff;
+}
+
+form button {
+    background: #00ff00;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #fff;
+    color: #00ff00;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1d1d1d;
+    color: #ccc;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
