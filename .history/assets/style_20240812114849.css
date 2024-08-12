@@ -39,7 +39,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: flex;
+    position: fixed;
     width: 100%;
     bottom: 0;
 }
@@ -168,7 +168,6 @@ footer p {
 }
 
 /* Estilos para o menu de navegação entre abas */
-
 .menu {
     display: flex;
     justify-content: center;

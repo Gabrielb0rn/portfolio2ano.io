@@ -169,6 +169,10 @@ footer p {
 
 /* Estilos para o menu de navegação entre abas */
 
+.menu-flutuante{
+    position: fixed;
+}
+
 .menu {
     display: flex;
     justify-content: center;
