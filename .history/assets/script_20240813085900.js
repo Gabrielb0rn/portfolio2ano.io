@@ -125,3 +125,10 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.querySelectorAll('.image-gallery a').forEach(item => {
+    item.addEventListener('click', function(e) {
+        e.preventDefault();
+        // Algum código que manipula a imagem para aumentá-la, como um modal
+    });
+});
