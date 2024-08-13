@@ -1,0 +1,384 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 1px solid #000; /* Adiciona a linha preta */
+    padding-bottom: 10px; /* Espaçamento entre o título e a linha */
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px; /* Espaçamento entre a linha e o menu */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #000; /* Muda a cor ao passar o mouse */
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bio-content {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.bio-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.bio-content p {
+    line-height: 1.6;
+}
+
+.bio-image {
+    width: 50%;
+}
+
+.bio-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0 10px 10px 0;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+footer a {
+    color: #666;
+    text-decoration: none;
+}
+
+/* Estilos específicos para o currículo */
+.curriculo-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.curriculo-imagem {
+    max-width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.curriculo-texto {
+    flex: 1;
+}
+
+.curriculo-section {
+    width: 100%;
+}
+
+.curriculo-section h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.curriculo-section p {
+    line-height: 1.6;
+}
+
+.link-certificado {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 5 px; 
+}
+
+.link-certificado:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos específicos para o portfólio */
+.portfolio-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.portfolio-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.portfolio-card h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.portfolio-card p {
+    line-height: 1.6;
+}
+
+.portfolio-card a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-card a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para as diferentes seções do portfólio */
+.portfolio-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.portfolio-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.portfolio-card h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.portfolio-card p {
+    line-height: 1.6;
+}
+
+.portfolio-card a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-card a:hover {
+    background-color: #0056b3;
+}
+
+/* Portfolio imagens com link */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Espaçamento entre as imagens */
+}
+
+.image-gallery a {
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-gallery a:hover {
+    transform: scale(1.05);
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .image-gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Estilos do modal */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilos adicionais para o currículo */
+
+/* Estilo do botão no currículo */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #000;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #444;
+}
+
+.perfil-pessoal {
+    margin-bottom: 50px;
+}
+
+.perfil-conteudo {
+    display: flex;
+    align-items: flex-start;
+}
+
+.foto-perfil {
+    max-width: 150px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.info-pessoal {
+    max-width: 600px;
+}
+
+.info-pessoal h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.formacao {
+    margin-top: 50px;
+}
+
+.formacao-conteudo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formacao-esquerda,
+.formacao-direita {
+    max-width: 45%;
+}
