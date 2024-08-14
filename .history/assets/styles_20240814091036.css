@@ -108,41 +108,7 @@ footer a {
     text-decoration: none;
 }
 
-/* Estilos específicos para o currículo */
-.curriculo-container {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.curriculo-imagem {
-    max-width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.curriculo-texto {
-    flex: 1;
-}
-
-.curriculo-section {
-    width: 100%;
-}
-
-.curriculo-section h2 {
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.curriculo-section p {
-    line-height: 1.6;
-}
-
+/
 
 /* Imagens com links no portfólio */
 .image-gallery {

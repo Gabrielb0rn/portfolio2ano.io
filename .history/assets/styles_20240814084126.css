@@ -143,6 +143,69 @@ footer a {
     line-height: 1.6;
 }
 
+/* Botão para certificados e outros links */
+.link-certificado {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.link-certificado:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos específicos para o portfólio */
+.portfolio-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.portfolio-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.portfolio-card h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.portfolio-card p {
+    line-height: 1.6;
+}
+
+.portfolio-card a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-card a:hover {
+    background-color: #0056b3;
+}
 
 /* Imagens com links no portfólio */
 .image-gallery {
@@ -368,62 +431,7 @@ footer a {
     color: #666;
 }
 
-/* esconde os detalhes da atividade do portfolio */
+/*  */
 .detalhes {
     display: none;
-}
-
-/* Botões gerais */
-.btn, .link-certificado, .portfolio-card button {
-    display: inline-block;
-    padding: 12px 24px;
-    margin-top: 20px;
-    background: linear-gradient(135deg, #333 0%, #000 100%); /* Gradiente de preto */
-    color: #fff;
-    border: none;
-    text-transform: uppercase;
-    cursor: pointer;
-    text-align: center;
-    border-radius: 25px; /* Arredondamento completo */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
-    transition: all 0.3s ease-in-out;
-    font-weight: bold;
-}
-
-.btn:hover, .link-certificado:hover, .portfolio-card button:hover {
-    background: linear-gradient(135deg, #444 0%, #111 100%); /* Gradiente mais claro ao hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Aumenta a sombra */
-    transform: translateY(-3px); /* Elevação ao passar o mouse */
-    color: white;
-    text-decoration: none;
-}
-
-
-
-/* Específico para botões dentro dos cards do portfólio */
-.portfolio-card button {
-    background: linear-gradient(135deg, #444 0%, #111 100%); /* Ajustando o gradiente para os botões dos cards */
-    margin-top: 10px;
-}
-
-.portfolio-card button:hover {
-    background: linear-gradient(135deg, #555 0%, #222 100%); /* Gradiente ainda mais claro ao hover */
-}
-
-a {
-    color: white;
-    text-decoration: none; /* Remove o sublinhado do link */
-}
-
-a:hover {
-    color: #f0f0f0; /* Muda a cor ao passar o mouse, se desejar */
-}
-
-.certificado-link a {
-    color: white;
-    text-decoration: none;
-}
-
-.certificado-link a:hover {
-    color: #f0f0f0;
 }
