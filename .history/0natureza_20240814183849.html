@@ -41,11 +41,14 @@
                                     <br>
                                     <p><strong>Assunto:</strong><br> Taxonomia e os 5 reinos dos seres vivos.</p><br>
                                     <p><strong>Crítica:</strong><br> É um estudo que trabalha amplamente a criatividade, a pesquisa e a absorção do conteúdo de forma didática.</p><br>
-                                    <button class="btn certificado-link"><a href="https://docs.google.com/document/d/1s5xns40IqkEIFOPrfclGvnM2Oh0u0zNHLjR1wylYlXI/edit?usp=sharing">Link da atividade</a></button>
+                                    <button class="btn certificado-link">
+                                        <a href="https://docs.google.com/document/d/1s5xns40IqkEIFOPrfclGvnM2Oh0u0zNHLjR1wylYlXI/edit?usp=sharing">Link da atividade</a>
+                                    </button>
                                 </div>
                                 <button class="toggle-button">Ver detalhes</button>
                             </div>
                         </div>
+                        
                         <br>
                         <div class="trimestre-content">
                             <div class="portfolio-card">
@@ -192,26 +195,6 @@
             <p>&copy;2024 por The Portfólio - Gabriel Oliveira Born.</p>
         </footer>
     </div>
-    <!-- Anexar a página de script não funciona -->
-    <script>
-        
-        document.querySelectorAll('.portfolio-card').forEach(card => {
-            const button = card.querySelector('.toggle-button');
-            const detalhes = card.querySelector('.detalhes');
-        
-            button.addEventListener('click', function() {
-                const isHidden = detalhes.style.display === 'none' || detalhes.style.display === '';
-        
-                if (isHidden) {
-                    detalhes.style.display = 'block';
-                    this.textContent = 'Esconder detalhes';
-                } else {
-                    detalhes.style.display = 'none';
-                    this.textContent = 'Ver detalhes';
-                }
-            });
-        });
-        
-    </script>
+    <script src="assets/script.js"></script>
 </body>
 </html>

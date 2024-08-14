@@ -194,24 +194,22 @@
     </div>
     <!-- Anexar a página de script não funciona -->
     <script>
-        
         document.querySelectorAll('.portfolio-card').forEach(card => {
-            const button = card.querySelector('.toggle-button');
-            const detalhes = card.querySelector('.detalhes');
-        
-            button.addEventListener('click', function() {
-                const isHidden = detalhes.style.display === 'none' || detalhes.style.display === '';
-        
-                if (isHidden) {
-                    detalhes.style.display = 'block';
-                    this.textContent = 'Esconder detalhes';
-                } else {
-                    detalhes.style.display = 'none';
-                    this.textContent = 'Ver detalhes';
-                }
-            });
+        const button = card.querySelector('.toggle-button');
+        const detalhes = card.querySelector('.detalhes');
+    
+        button.addEventListener('click', function() {
+            const isHidden = detalhes.style.display === 'none' || detalhes.style.display === '';
+    
+            if (isHidden) {
+                detalhes.style.display = 'block';
+                this.textContent = 'Esconder detalhes';
+            } else {
+                detalhes.style.display = 'none';
+                this.textContent = 'Ver detalhes';
+            }
         });
-        
+    });
     </script>
 </body>
 </html>

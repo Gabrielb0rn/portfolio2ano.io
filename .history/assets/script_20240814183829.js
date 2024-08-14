@@ -119,12 +119,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Botões de Alternância de Visibilidade --- NÃO ESTÁ FUNCIONANDO
-    const buttons = document.querySelectorAll(".toggle-button");
+   // Botões de Alternância de Visibilidade
+const buttons = document.querySelectorAll(".toggle-button");
 
-    buttons.forEach(button => {
-        button.addEventListener("click", function() {
-            const detalhes = this.previousElementSibling;
+buttons.forEach(button => {
+    button.addEventListener("click", function() {
+        // Encontrar o elemento .detalhes mais próximo do botão clicado
+        const detalhes = this.previousElementSibling;
+
+        if (detalhes && detalhes.classList.contains("detalhes")) {
             const isHidden = detalhes.style.display === "none" || detalhes.style.display === "";
 
             if (isHidden) {
@@ -134,25 +137,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 detalhes.style.display = "none";
                 this.textContent = "Ver detalhes";
             }
-        });
+        }
     });
-    document.querySelectorAll('.portfolio-card').forEach(card => {
-        const button = card.querySelector('.toggle-button');
-        const detalhes = card.querySelector('.detalhes');
-    
-        button.addEventListener('click', function() {
-            const isHidden = detalhes.style.display === 'none' || detalhes.style.display === '';
-    
-            if (isHidden) {
-                detalhes.style.display = 'block';
-                this.textContent = 'Esconder detalhes';
-            } else {
-                detalhes.style.display = 'none';
-                this.textContent = 'Ver detalhes';
-            }
-        });
-    });
-    
+});
+
     
 // inativo
     // Envio de Formulário de Contato

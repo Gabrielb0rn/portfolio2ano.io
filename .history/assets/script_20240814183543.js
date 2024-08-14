@@ -119,11 +119,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Botões de Alternância de Visibilidade --- NÃO ESTÁ FUNCIONANDO
+    // Botões de Alternância de Visibilidade
     const buttons = document.querySelectorAll(".toggle-button");
 
     buttons.forEach(button => {
-        button.addEventListener("click", function() {
+        button.addEventListener("onclick", function() {
             const detalhes = this.previousElementSibling;
             const isHidden = detalhes.style.display === "none" || detalhes.style.display === "";
 
@@ -136,23 +136,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-    document.querySelectorAll('.portfolio-card').forEach(card => {
-        const button = card.querySelector('.toggle-button');
-        const detalhes = card.querySelector('.detalhes');
-    
-        button.addEventListener('click', function() {
-            const isHidden = detalhes.style.display === 'none' || detalhes.style.display === '';
-    
-            if (isHidden) {
-                detalhes.style.display = 'block';
-                this.textContent = 'Esconder detalhes';
-            } else {
-                detalhes.style.display = 'none';
-                this.textContent = 'Ver detalhes';
-            }
-        });
-    });
-    
     
 // inativo
     // Envio de Formulário de Contato

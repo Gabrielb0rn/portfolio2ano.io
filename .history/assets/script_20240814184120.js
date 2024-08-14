@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Botões de Alternância de Visibilidade --- NÃO ESTÁ FUNCIONANDO
+    // Botões de Alternância de Visibilidade
     const buttons = document.querySelectorAll(".toggle-button");
 
     buttons.forEach(button => {
