@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPE - Portfólio Gabriel Oliveira Born</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="shortcut icon" href="resources/icon/icon.jpg">
+</head>
+<br>
+<body>
+    <header>
+        <h1>PORTFÓLIO - GABRIEL OLIVEIRA BORN</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Biografia</a></li>
+                <li><a href="curriculo.html">Currículo</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="https://www.canva.com/design/DAFfFtxue1o/eXLfszg6Vfg005EKr5EAKg/view?utm_content=DAFfFtxue1o&utm_campaign=designshare&utm_medium=link&utm_source=viewer">Portfólio - 1º ano</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <section class="ppe-section">
+                <center><h2>Plano Pessoal de Estudos</h2></center><br>
+                   
+                <!-- Container para Natureza -->
+                <div class="trimestres-container" id="natureza">
+                    <center><h2>Natureza</h2></center><br>
+                    <div class="trimestre">
+                        <h3>1º Trimestre</h3>
+                        <button class="btn" onclick="showPopup('natureza-1')">Detalhes</button>
+                    </div>
+                    <div class="trimestre">
+                        <h3>2º Trimestre</h3>
+                        <button class="btn" onclick="showPopup('natureza-2')">Detalhes</button>
+                    </div>
+                    <div class="trimestre">
+                        <h3>3º Trimestre</h3>
+                        <button class="btn" onclick="showPopup('natureza-3')">Detalhes</button>
+                    </div>
+                </div>
+
+                <!-- Container para Humanas -->
+                <div class="trimestres-container" id="humanas">
+                    <center><h2>Humanas</h2></center><br>
+                    <div class="trimestre">
+                        <h3>1º Trimestre</h3>
+                        <button class="btn" onclick="showPopup('humanas-1')">Detalhes</button>
+                    </div>
+                    <div class="trimestre">
+                        <h3>2º Trimestre</h3>
+                        <button class="btn" onclick="showPopup('humanas-2')">Detalhes</button>
+                    </div>
+                    <div class="trimestre">
+                        <h3>3º Trimestre</h3>
+                        <button class="btn" onclick="showPopup('humanas-3')">Detalhes</button>
+                    </div>
+                </div>
+
+                <!-- Container para Matemática -->
+                <div class="trimestres-container" id="matematica">
+                    <center><h2>Matemática</h2></center><br>
+                    <div class="trimestre">
+                        <h3>1º Trimestre</h3>
+                        <button class="btn" onclick="showPopup('matematica-1')">Detalhes</button>
+                    </div>
+                    <div class="trimestre">
+                        <h3>2º Trimestre</h3>
+                        <button class="btn" onclick="showPopup('matematica-2')">Detalhes</button>
+                    </div>
+                    <div class="trimestre">
+                        <h3>3º Trimestre</h3>
+                        <button class="btn" onclick="showPopup('matematica-3')">Detalhes</button>
+                    </div>
+                </div>
+
+                <!-- Pop-ups -->
+                <div id="natureza-1" class="popup">
+                    <div class="popup-header">Natureza - 1º Trimestre</div>
+                    <div class="popup-content">
+                        <p>Descrição do PPE para Natureza no 1º Trimestre.</p>
+                    </div>
+                    <button class="popup-close" onclick="closePopup('natureza-1')">Fechar</button>
+                </div>
+
+                <div id="natureza-2" class="popup">
+                    <div class="popup-header">Natureza - 2º Trimestre</div>
+                    <div class="popup-content">
+                        <p>Descrição do PPE para Natureza no 2º Trimestre.</p>
+                    </div>
+                    <button class="popup-close" onclick="closePopup('natureza-2')">Fechar</button>
+                </div>
+
+                <div id="natureza-3" class="popup">
+                    <div class="popup-header">Natureza - 3º Trimestre</div>
+                    <div class="popup-content">
+                        <p>Descrição do PPE para Natureza no 3º Trimestre.</p>
+                    </div>
+                    <button class="popup-close" onclick="closePopup('natureza-3')">Fechar</button>
+                </div>
+
+                <div id="humanas-1" class="popup">
+                    <div class="popup-header">Humanas - 1º Trimestre</div>
+                    <div class="popup-content">
+                        <p>Descrição do PPE para Humanas no 1º Trimestre.</p>
+                    </div>
+                    <button class="popup-close" onclick="closePopup('humanas-1')">Fechar</button>
+                </div>
+
+                <div id="humanas-2" class="popup">
+                    <div class="popup-header">Humanas - 2º Trimestre</div>
+                    <div class="popup-content">
+                        <p>Descrição do PPE para Humanas no 2º Trimestre.</p>
+                    </div>
+                    <button class="popup-close" onclick="closePopup('humanas-2')">Fechar</button>
+                </div>
+
+                <div id="humanas-3" class="popup">
+                    <div class="popup-header">Humanas - 3º Trimestre</div>
+                    <div class="popup-content">
+                        <p>Descrição do PPE para Humanas no 3º Trimestre.</p>
+                    </div>
+                    <button class="popup-close" onclick="closePopup('humanas-3')">Fechar</button>
+                </div>
+
+                <div id="exatas-1" class="popup">
+                    <div class="popup-header">Matemática - 1º Trimestre</div>
+                    <div class="popup-content">
+                        <p>Descrição do PPE para Matemática no 1º Trimestre.</p>
+                    </div>
+                    <button class="popup-close" onclick="closePopup('exatas-1')">Fechar</button>
+                </div>
+
+                <div id="exatas-2" class="popup">
+                    <div class="popup-header">Matemática - 2º Trimestre</div>
+                    <div class="popup-content">
+                        <p>Descrição do PPE para Matemática no 2º Trimestre.</p>
+                    </div>
+                    <button class="popup-close" onclick="closePopup('exatas-2')">Fechar</button>
+                </div>
+
+                <div id="exatas-3" class="popup">
+                    <div class="popup-header">Matemática - 3º Trimestre</div>
+                    <div class="popup-content">
+                        <p>Descrição do PPE para Matemática no 3º Trimestre.</p>
+                    </div>
+                    <button class="popup-close" onclick="closePopup('exatas-3')">Fechar</button>
+                </div>
+
+            </section>
+        </main>
+        <footer>
+            <p>The Portfólio - Gabriel Oliveira Born</p>
+            <p><a href="mailto:gabriel_born@estudante.sesisenai.org.br">gabriel_born@estudante.sesisenai.org.br</a></p>
+            <p>&copy;2024 por The Portfólio - Gabriel Oliveira Born.</p>
+        </footer>
+    </div>
+    <script>
+        function showPopup(popupId) {
+            document.getElementById(popupId).style.display = 'block';
+        }
+
+        function closePopup(popupId) {
+            document.getElementById(popupId).style.display = 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades Extras e Certificados - Portfólio Gabriel Oliveira Born</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="shortcut icon" href="resources/icon/icon.jpg">
+</head>
+<br>
+<body>
+    <header>
+        <h1>PORTFÓLIO - GABRIEL OLIVEIRA BORN</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Biografia</a></li>
+                <li><a href="curriculo.html">Currículo</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="https://www.canva.com/design/DAFfFtxue1o/eXLfszg6Vfg005EKr5EAKg/view?utm_content=DAFfFtxue1o&utm_campaign=designshare&utm_medium=link&utm_source=viewer">Portfólio - 1º ano</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <section class="portfolio-section">
+                <center><h2>Atividades Extras e Certificados</h2></center>
+                
+                <div class="trimestres-container">
+                    <div class="trimestre">
+                        <h3>Atividades Extras</h3>
+                        <br>
+                        <div class="trimestre-content">
+                            <div class="portfolio-card">
+                                <h4>Nome da Atividade Extra</h4>
+                                <div class="detalhes">
+                                    <p><strong>Data:</strong> 01/08/2024</p>
+                                    <p><strong>Descrição:</strong> Detalhes da atividade extra realizada, com informações sobre objetivos e resultados.</p>
+                                </div>
+                                <button class="toggle-button">Ver detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trimestre">
+                        <h3>Certificados</h3>
+                        <br>
+                        <div class="trimestre-content">
+                            <div class="portfolio-card">
+                                <h4>Nome do Certificado</h4>
+                                <div class="detalhes">
+                                    <p><strong>Data de Emissão:</strong> 15/08/2024</p>
+                                    <p><strong>Descrição:</strong> Detalhes do certificado, como a instituição que o emitiu e o motivo da certificação.</p>
+                                    <button class="btn certificado-link"><a href="#">Ver Certificado</a></button>
+                                </div>
+                                <button class="toggle-button">Ver detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+        <footer>
+            <p>The Portfólio - Gabriel Oliveira Born</p>
+            <p><a href="mailto:gabriel_born@estudante.sesisenai.org.br">gabriel_born@estudante.sesisenai.org.br</a></p>
+            <p>&copy;2024 por The Portfólio - Gabriel Oliveira Born.</p>
+        </footer>
+    </div>
+    <script>
+        
+        document.querySelectorAll('.portfolio-card').forEach(card => {
+            const button = card.querySelector('.toggle-button');
+            const detalhes = card.querySelector('.detalhes');
+        
+            button.addEventListener('click', function() {
+                const isHidden = detalhes.style.display === 'none' || detalhes.style.display === '';
+        
+                if (isHidden) {
+                    detalhes.style.display = 'block';
+                    this.textContent = 'Esconder detalhes';
+                } else {
+                    detalhes.style.display = 'none';
+                    this.textContent = 'Ver detalhes';
+                }
+            });
+        });
+        
+    </script>
+</body>
+</html>
