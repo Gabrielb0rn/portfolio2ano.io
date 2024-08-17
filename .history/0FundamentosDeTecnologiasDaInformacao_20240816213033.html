@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundamentos de Redes de Computadores - Portfólio Gabriel Oliveira Born</title>
+    <title>Fundamentos de Tecnologias da Informação - Portfólio Gabriel Oliveira Born</title>
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="shortcut icon" href="resources/icon/icon.jpg">
 </head>
@@ -23,17 +23,28 @@
     <div class="container">
         <main>
             <section class="portfolio-section">
-                <center><h2>Fundamentos de Redes de Computadores</h2></center>
+                <center><h2>Fundamentos de Tecnologias da Informação</h2></center>
                 <div class="trimestres-container">
                     <div class="trimestre"> <!-- PRIMEIRO TRIMESTRE -->
                         <h3>1º Trimestre</h3>
                         <br>
                         <div class="trimestre-content">
                             <div class="portfolio-card">
-                                <h4>Atividades Futuras</h4>
+                                <h4>Apresentação Hardwares</h4>
                                 <div class="detalhes">
-                                    <p>No momento, não há atividades disponíveis para esta disciplina. Fique atento para futuras atualizações.</p>
+                                    <br>
+                                    <p><strong>Habilidades:</strong><br>
+                                        H4, H5, H6 e H7
+</p>
+                                    <br>
+                                    <p><strong>Objetivo:</strong><br>
+                                        #</p>
+                                    <br>
+                                    <p><strong>Assunto:</strong><br> Hardwares.</p><br>
+                                    <p><strong>Crítica:</strong><br> #.</p><br>
+                                    <button class="btn certificado-link"><a href="https://www.canva.com/design/DAF9nOUi-zA/NUypPR2p0YYAqKe4PPRpSA/view?utm_content=DAF9nOUi-zA&utm_campaign=designshare&utm_medium=link&utm_source=editor">Link do Canvas</a></button>
                                 </div>
+                                <button class="toggle-button">Ver detalhes</button>
                             </div>
                         </div>
                     </div>
@@ -64,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-                <center><button class="btn"><a href="0LogicaComputacional.html">Próxima matéria (Lógica Computacional)</a></button></center>
+                <center><button class="btn"><a href="0LogicaDeProgramacao.html">Próxima matéria (Lógica de Programação)</a></button></center>
             </section>
         </main>
         <footer>
@@ -73,6 +84,24 @@
             <p>&copy;2024 por The Portfólio - Gabriel Oliveira Born.</p>
         </footer>
     </div>
-    <script src="assets/script.js"></script>
+    <script>
+        document.querySelectorAll('.portfolio-card').forEach(card => {
+            const button = card.querySelector('.toggle-button');
+            const detalhes = card.querySelector('.detalhes');
+        
+            button.addEventListener('click', function() {
+                const isHidden = detalhes.style.display === 'none' || detalhes.style.display === '';
+        
+                if (isHidden) {
+                    detalhes.style.display = 'block';
+                    this.textContent = 'Esconder detalhes';
+                } else {
+                    detalhes.style.display = 'none';
+                    this.textContent = 'Ver detalhes';
+                }
+            });
+        });
+        
+    </script>
 </body>
 </html>
