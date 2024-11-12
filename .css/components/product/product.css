@@ -1,0 +1,177 @@
+/* assets/css/products.css */
+
+/* Container dos produtos */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os produtos */
+}
+
+/* Estilo básico dos produtos */
+.product-card {
+    flex: 1 1 150px; /* Cada produto tem um tamanho mínimo, mas pode crescer */
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo da imagem */
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-title {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-price {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+
+/* Estilo para o título das seções de produto */
+.product-section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o contêiner de produtos */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: calc(33% - 40px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-price {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Main container layout */
+.main-content {
+    display: flex;
+    margin-top: 80px; /* Distância para não cobrir o header */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 200px;
+    background-color: #F0F1F2;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Main product section */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Remova o display inicial de .product-section */
+.product-section {
+    /* Configurações gerais de estilo para a seção */
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.product-section.active {
+    display: block; /* Exibir apenas a seção ativa */
+}
+
+#recomendados {
+    display: block; /* Mostrar "Recomendados" como padrão */
+}
+
+#recomendados.hidden {
+    display: none;
+}
+
+/* Detalhes do produto */
+.product-details {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* Quando o produto for selecionado, expande para exibir as informações */
+.product-card.selected {
+    flex: 2; /* Aumenta o produto selecionado */
+    transform: scale(1.1); /* Aumenta o produto */
+    z-index: 10; /* Coloca o produto acima dos outros */
+}
+
+/* Exibe os detalhes quando o produto está selecionado */
+.product-card.selected .product-details {
+    display: block;
+}
+
+/* Minimizar outros produtos */
+.product-card.minimized {
+    opacity: 0.6;
+    flex: 0 0 100px; /* Reduz o tamanho dos produtos minimizados */
+}

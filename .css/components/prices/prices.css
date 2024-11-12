@@ -1,0 +1,109 @@
+/* Seção de Planos */
+.plans {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--bg-color);
+}
+
+.plans h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.plan-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    background-color: var(--card-hover-color);
+}
+
+.plan-card h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.plan-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.plan-card .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.plan-card button {
+    background-color: var(--link-hover-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.plan-card button:hover {
+    background-color: var(--link-hover-color);
+}
+
+/* Estilos Responsivos para os Planos */
+@media (max-width: 768px) {
+    .plan-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan-card {
+        width: 90%;
+    }
+}
+
+/* Definir o container dos cards com flexbox */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que os cards quebrem em várias linhas */
+    justify-content: space-around; /* Espaço uniforme entre os cards */
+}
+
+.service-card {
+    width: 22%; /* Ajustar a largura dos cards para caberem 4 por linha */
+    margin-bottom: 20px; /* Espaçamento entre as linhas */
+    background-color: #f0f1f2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.service-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.service-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

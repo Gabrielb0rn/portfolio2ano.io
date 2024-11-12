@@ -1,0 +1,13 @@
+/* button.css */
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sign-in {
+    background-color: #28a745;
+    color: white;
+}
